@@ -12,6 +12,7 @@ def Menu():
             print("1. Archivos ")
             print("2. Acciones ")
             # print("3. Salir ")
+            print("\n(Coloque la pantalla maximizada para visualizar mejor las vistas)")
             option = int(input("\nSeleccione una opcion: "));
             
             if(option == 1 ):

@@ -23,26 +23,35 @@ def load_file(dic:dict)->dict:
         print("\nError --> Archivo no encontrado\n")
         wait = input("Presione una tecla para continuar")
         clear_screen()
+        dic = None
+        
         
     except PermissionError:
         print("\nError --> No cuenta con permisos para leer el archivo\n")
         wait = input("Presione una tecla para continuar")
         clear_screen()
+        dic = None
+        
     
     except InvalidTextFile as e:
         print("\nError: ", e)
         wait = input("Presione una tecla para continuar")
         clear_screen()
+        dic = None
+        
         
     except IncorrectData as e:
         print("\nError: ", e)
         wait = input("Presione una tecla para continuar")
         clear_screen()
+        dic = None
         
     except:
         print("\nError no esperado mientras se lee el archivo\n")
         wait = input("Presione una tecla para continuar")
         clear_screen()
+        dic = None
+        
         
     else:
         print("\nArchivo Leido Exitosamente!!!\n")

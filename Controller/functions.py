@@ -279,7 +279,7 @@ def verify_data(dic:dict)->bool:
     participants = dic["participants"]
     count = 0
     for i in participants:
-        if len(participants) != 10:
+        if len(i) != 10:
             return False
     
     return True
